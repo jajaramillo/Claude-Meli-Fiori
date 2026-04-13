@@ -1,0 +1,59 @@
+{
+  "enabledPlugins": {
+    "sap-fiori-tools@sap-skills": true,
+    "sapui5@sap-skills": true,
+    "sapui5-linter@sap-skills": true,
+    "sap-cap-capire@sap-skills": false,
+    "sapui5-cli@sap-skills": true
+  },
+  "extraKnownMarketplaces": {
+    "sap-skills": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/secondsky/sap-skills.git"
+      }
+    }
+  },
+  "mcpServers": {
+    "ui5": {
+      "type": "stdio",
+      "command": "ui5mcp",
+      "args": [],
+      "env": {
+        "PATH": "/home/user/.node_modules_global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/bin"
+      }
+    },
+    "cap": {
+      "type": "stdio",
+      "command": "cds-mcp",
+      "args": [],
+      "env": {
+        "PATH": "/home/user/.node_modules_global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/bin"
+      }
+    },
+    "fiori": {
+      "type": "stdio",
+      "command": "fiori-mcp",
+      "args": [],
+      "env": {
+        "PATH": "/home/user/.node_modules_global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/bin"
+      }
+    },
+    "sap-docs-online-http": {
+      "disabled": false,
+      "timeout": 60,
+      "type": "streamableHttp",
+      "url": "https://sap-docs-mcp.cfapps.us10-001.hana.ondemand.com/mcp"
+    },
+    "abap-adt": {
+      "type": "stdio",
+      "command": "/home/user/vsp",
+      "env": {
+        "SAP_URL": "https://vhmcads4ci.rise.melisap.com:44300",
+        "SAP_USER": "EXT_JAIJARAM",
+        "SAP_CLIENT": "200",
+        "SAP_COOKIE_STRING": "SAP_SESSIONID_DS4_200=C_ReBEKW9l7KuOpp1h1gYVjxYVs3XBHxi9MV_z2UF2A%3d"
+      }
+    }
+  }
+}
