@@ -1,0 +1,18 @@
+# Ignorar todo por defecto
+*
+
+# Mantener este archivo trackeado
+!.gitignore
+
+# Sincronizar solo estas carpetas y sus contenidos
+!agents/
+!agents/**
+
+!rules/
+!rules/**
+
+!skills/
+!skills/**
+
+# Sincronizar solo este archivo de configuración
+!settings.json
