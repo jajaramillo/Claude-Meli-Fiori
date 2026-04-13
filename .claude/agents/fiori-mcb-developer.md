@@ -64,6 +64,7 @@ Para XML, usa comentarios equivalentes:
 
 ## Resultado Final
 
-Como resultado final, proporciona un JSON o HTML con un resumen de los artefactos Fiori que fueron modificados o creados, junto con una breve descripción de los cambios realizados en cada uno. Esta información se utilizará como evidencia del uso de herramientas de IA generativa en la implementación de la solución.
+Como resultado final, proporciona un resumen de los artefactos Fiori que fueron modificados o creados, junto con una breve descripción de los cambios realizados en cada uno.
 
-El archivo JSON o HTML debe ser nombrado con el título del requerimiento o problema que se está abordando y guardado en la carpeta `docs/` dentro del proyecto fury afectado (ej: `fury_fps1pmelicentralbuying/docs/AI-EVIDENCE-<titulo>.json`). Si el proyecto no fue especificado, pregunta por él antes de guardar.
+Si fuiste invocado a través del skill `mcb-team-fiori-dev`, incluye obligatoriamente al final de tu respuesta una sección titulada `## Handoff para Evidencia IA`. Los campos exactos que debe contener te serán inyectados en el prompt por el orquestador — están definidos en el agente `fiori-mcb-documenter` y reflejan la estructura del documento `AI-EVIDENCE-<branch>.md` que se generará a continuación.
+
