@@ -1,16 +1,32 @@
 {
+  "permissions": {
+    "allow": [
+      "mcp__abap-adt__GetTransport",
+      "mcp__abap-adt__RunQuery",
+      "mcp__abap-adt__GetConnectionInfo",
+      "mcp__abap-adt__GetFeatures",
+      "mcp__abap-adt__ListTransports",
+      "mcp__abap-adt__CallRFC",
+      "mcp__abap-adt__GetTableContents",
+      "mcp__abap-adt__SearchObject",
+      "mcp__abap-adt__GetSource",
+      "mcp__abap-adt__GrepObjects"
+    ]
+  },
   "enabledPlugins": {
+    "sap-abap@sap-skills": true,
+    "ui5@claude-plugins-official": true,
+    "sap-abap-cds@sap-skills": true,
     "sap-fiori-tools@sap-skills": true,
     "sapui5@sap-skills": true,
-    "sapui5-linter@sap-skills": true,
-    "sap-cap-capire@sap-skills": false,
-    "sapui5-cli@sap-skills": true
+    "sapui5-cli@sap-skills": true,
+    "sapui5-linter@sap-skills": true
   },
   "extraKnownMarketplaces": {
     "sap-skills": {
       "source": {
         "source": "git",
-        "url": "https://github.com/secondsky/sap-skills.git"
+        "url": "git@github.com:secondsky/sap-skills.git"
       }
     }
   },
@@ -40,7 +56,7 @@
       }
     },
     "sap-docs-online-http": {
-      "disabled": false,
+      "disabled": true,
       "timeout": 60,
       "type": "streamableHttp",
       "url": "https://sap-docs-mcp.cfapps.us10-001.hana.ondemand.com/mcp"
@@ -48,11 +64,11 @@
     "abap-adt": {
       "type": "stdio",
       "command": "/home/user/vsp",
+      "args": [],
       "env": {
         "SAP_URL": "https://vhmcads4ci.rise.melisap.com:44300",
         "SAP_USER": "EXT_JAIJARAM",
-        "SAP_CLIENT": "200",
-        "SAP_COOKIE_STRING": "SAP_SESSIONID_DS4_200=C_ReBEKW9l7KuOpp1h1gYVjxYVs3XBHxi9MV_z2UF2A%3d"
+        "SAP_CLIENT": "200"
       }
     }
   }

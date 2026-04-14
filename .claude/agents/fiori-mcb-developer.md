@@ -62,9 +62,3 @@ Para XML, usa comentarios equivalentes:
 <!-- END [XXXXX_01] -->
 ```
 
-## Resultado Final
-
-Como resultado final, proporciona un resumen de los artefactos Fiori que fueron modificados o creados, junto con una breve descripción de los cambios realizados en cada uno.
-
-Si fuiste invocado a través del skill `mcb-team-fiori-dev`, incluye obligatoriamente al final de tu respuesta una sección titulada `## Handoff para Evidencia IA`. Los campos exactos que debe contener te serán inyectados en el prompt por el orquestador — están definidos en el agente `fiori-mcb-documenter` y reflejan la estructura del documento `AI-EVIDENCE-<branch>.md` que se generará a continuación.
-
